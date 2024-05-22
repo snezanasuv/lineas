@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Линии движения</title>
+    <link rel="stylesheet" href="styles/application.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="main_menu">
+            <a href="index.html"><img src="img/логотип.png" alt="Логотип" height="70px"></a>
+            <a href="index.html" class="link_menu"> Главная </a>
+            <a href="konkurs.html" class="link_menu"> Конкурс </a>
+            <a href="results.html" class="link_menu"> Результаты </a>
+            <a href="works.html" class="link_menu"> Работы </a> 
+            <a href="news.html" class="link_menu"> Новости </a> 
+            <a href="register.html" class="link_menu active-link"> Личный кабинет </a> 
+        </nav>
+    </header>
+    <div class="register">
+        <form action="profile.html" class="regis_form">
+            <h3>Заявка</h3>
+            <div class="inputs">
+                <input type="text" class="name" placeholder="Имя" name="name" minlength="3" maxlength="20" required>
+                <input class="surname" type="text" name="surname" placeholder="Фамилия" minlength="3" maxlength="20" required>
+                <input class="patronymic" type="text" placeholder="Отчество" name="patronymic" minlength="3" maxlength="20">
+                <input class="phone" type="phone" placeholder="Телефон" name="phone" required>
+                <input name = "passport" class="passport" type="number" placeholder="Номер и серия паспорта" required>
+                <input class='birthyear' name ='birthyear' placeholder="Год рождения" type="number" min="1900" max="2009" required>
+                <input id="password" class="password" type="password" name="password" placeholder="Пароль" minlength="8" maxlength="20" required>
+                <input id="confirmPassword" class="confirmPassword" type="password" name="confirmPassword" placeholder="Потвердите пароль" minlength="8" maxlength="20" required>
+                <select name="nomination" required>
+                    <option value="0" disabled selected>Выберите номинацию</option>
+                    <option value="1">Разработка макета наклеек для проведения уличных пропагандистских акций</option>
+                    <option value="2">Разработка макета логотипа Госавтоинспекции МВД по Республике Хакасия</option>
+                    <option value="3">Разработка макета логотипа проекта «За безопасность дорожного движения и сохранения жизни в РХ»</option>
+                    <option value="4">Разработка макета баннера социальной рекламы</option>
+                </select>
+                <select name="nomination">
+                    <option value="0" disabled selected>Выберите акцию</option>
+                    <option value="1">«Притормози!»</option>
+                    <option value="2">«За рулём нас двое»</option>
+                    <option value="3">«Соблюдай скорость»</option>
+                    <option value="4">«Останови пьяного»</option>
+                    <option value="5">«Пристегни самое дорогое»</option>
+                </select>
+            </div>
+            <button type="submit" class="regis">Зарегистрироваться</button>
+        </form>
+        <a href="login.html"><p>Уже зарегистрировались? <strong>Войти</strong></p></a>
+
+    </div>
+    
+    <footer>
+            <div class="foot_container">
+                <div class="column">
+                    <a href="index.html"><img class="f_logo" src="img/logo 2.png" alt="Логотип"></a> 
+                    <a href="Пользовательское соглашение.odt" class="link">Пользовательское соглашение</a>
+                    <a href="Политика конфиденциальности.odt" class="link">Политика конфиденциальности</a>
+                    <p class="domen">© Линия движения, 2024</p>
+                </div>
+                <div class="column">
+                    <h3>Меню</h3>
+                    <a href="index.html" class="flink_menu"> Главная </a>
+                    <a href="konkurs.html" class="flink_menu"> Конкурс </a>
+                    <a href="results.html" class="flink_menu"> Результаты </a>
+                    <a href="works.html" class="flink_menu"> Работы </a> 
+                    <a href="news.html" class="flink_menu"> Новости </a> 
+                    <a href="register.html" class="flink_menu f_active-link"> Личный кабинет </a>
+                </div>
+                <div class="column">
+                    <h3>Контакты</h3>
+                    <a class="flink_menu" href="tel:+78001111111"> 8(800)111-11-11</a>
+                    <a class="flink_menu" href="mailto:liniidvizhenya@mail.ru">liniidvizhenya@mail.ru</a>
+                    <div class="social_medias"><img class="social" src="img/вк.png" alt="vk"><img src="img/ок.png" alt="ok" class="social"><img src="img/тг.png" alt="tg" class="social"></div>
+                </div>
+            </div>
+
+
+    </footer>
+    <script src="scripts/register_validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Линии движения</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+        <nav class="main_menu">
+            <a href="index.html"><img src="img/логотип.png" alt="Логотип" class='logo'></a>
+            <a href="index.html" class="link_menu active-link"> Главная </a>
+            <a href="konkurs.html" class="link_menu "> Конкурс </a>
+            <a href="results.html" class="link_menu"> Результаты </a>
+            <a href="works.html" class="link_menu"> Работы </a> 
+            <a href="news.html" class="link_menu"> Новости </a> 
+            <a href="login.html" class="link_menu"> Личный кабинет </a> 
+        </nav>
+    </header>
+    <div class="slider">
+        <div class="slide">
+            <button class="prev" onclick="prev()">⟸</button>
+            <div class="img" data-sequence="0"></div>
+            <button class="next" onclick="next()">⟹</button>
+        </div>
+        <div class="dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <div class="news"> 
+        <h3 class="title">Последние новости</h3>
+        <div class="news_container">
+            <div class="new">
+                <div class="news_img">
+                    <img class="img_n" src="img/news1.png" alt="картинка для новости">
+                </div>
+                <div class="news_text">
+                    <p class="news_title">Результаты конкурса</p>
+                    <p>Стали известны результаты конкурса</p>
+                    <form action="news.html"><button class="news_btn">Подробнее</button></form>                    </div>
+            </div>
+            <div class="new">
+                <div class="news_img">
+                    <img class="img_n" src="img/news2.png" alt="картинка для новости">
+                </div>
+                <div class="news_text">
+                    <p class="news_title">Новая номинация</p>
+                    <p>Была добавлена новая номинация</p>
+                    <form action="news.html"><button class="news_btn">Подробнее</button></form>
+                </div>
+            </div>
+            <div class="new">
+                <div class="news_img">
+                    <img class="img_n" src="img/news3.png" alt="картинка для новости">
+                </div>
+                <div class="news_text">
+                    <p class="news_title">Победитель конкурса</p>
+                    <p>Победитель конкурса в 2022 году</p>
+                    <form action="news.html"><button class="news_btn">Подробнее</button></form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nominations">
+        <h3 class="title">Номинации конкурса</h3>
+        <div class="infographic">
+            <div class="nomination">
+                <p class="number one">01</p>
+                <div class="el back1 right">
+                    <div class="text one"><p class="p">Разработка макета наклеек для проведения уличных пропагандистских акций</p></div>
+                    <img src="img/n1.png" class="nomination_icon" alt="nomination icon">
+                </div>
+            </div>
+            <div class="nomination">
+                <div class="el back1 left">
+                    <img src="img/n2.png" class="nomination_icon" alt="nomination icon">
+                    <div class="text two"><p class="p">Разработка макета логотипа Госавтоинспекции МВД по Республике Хакасия</p></div>
+                </div>
+                <p class="number two">02</p>
+            </div>
+            <div class="nomination ">
+                <p class="number three">03</p>
+                <div class="el back2 right">
+                    <div class="text three"><p class="p">Разработка макета логотипа проекта «За безопасность дорожного движения и сохранения жизни в РХ»</p></div>
+                    <img src="img/n3.png" class="nomination_icon" alt="nomination icon">
+                </div>
+            </div>
+            <div class="nomination ">
+                <div class="el back2 left">
+                    <img src="img/n4.png" class="nomination_icon" alt="nomination icon">
+                    <div class="text four"><p class="p">Разработка макета баннера социальной рекламы</p></div>
+                </div>
+                <p class="number four">04</p>
+            </div>
+        </div>             
+    </div>
+
+    <footer>
+        <div class="foot_container">
+            <div class="column">
+                <a href="index.html"><img class="f_logo" src="img/logo 2.png" alt="Логотип"></a> 
+                <a href="documents/Пользовательское соглашение.odt" class="link">Пользовательское соглашение</a>
+                <a href="documents/Политика конфиденциальности.odt" class="link">Политика конфиденциальности</a>
+                <p class="domen">© Линия движения, 2024</p>
+            </div>
+            <div class="column">
+                <h3>Меню</h3>
+                <a href="index.html" class="flink_menu f_active-link"> Главная </a>
+                <a href="konkurs.html" class="flink_menu"> Конкурс </a>
+                <a href="results.html" class="flink_menu"> Результаты </a>
+                <a href="works.html" class="flink_menu"> Работы </a> 
+                <a href="news.html" class="flink_menu"> Новости </a> 
+                <a href="register.html" class="flink_menu"> Личный кабинет </a>
+            </div>
+            <div class="column">
+                <h3>Контакты</h3>
+                <a class="flink_menu" href="tel:+78001111111"> 8(800)111-11-11</a>
+                <a class="flink_menu" href="mailto:vlad@webref.ru">liniidvizhenya@mail.ru</a>
+                <div class="social_medias">
+                    <img class="social" src="img/вк.png" alt="vk">
+                    <img src="img/ок.png" alt="ok" class="social">
+                    <img src="img/тг.png" alt="tg" class="social">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Линии движения</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="main_menu">
+            <a href="index.html"><img src="img/логотип.png" alt="Логотип" height="70px"></a>
+            <a href="index.html" class="link_menu"> Главная </a>
+            <a href="konkurs.html" class="link_menu"> Конкурс </a>
+            <a href="results.html" class="link_menu"> Результаты </a>
+            <a href="works.html" class="link_menu"> Работы </a> 
+            <a href="news.html" class="link_menu"> Новости </a> 
+            <a href="register.html" class="link_menu active-link"> Личный кабинет </a> 
+        </nav>
+    </header>
+    <div class="login">
+        <form class="login_form" action="profile.html">
+            <h3>Авторизация</h3>
+            <input id="phone" class="phone" type="tel" name="phone" placeholder="Телефон" minlength="11" maxlength="12" required>
+            <input id="password" class="password" type="password" name="password" placeholder="Пароль" minlength="8" maxlength="20" required> 
+            <button type="submit">Войти</button>
+        </form>
+        <a class="rl" href="register.html"><p >У вас нет аккаунта? <strong>Зарегистрироваться</strong></p></a>
+    </div>
+    <footer>
+        <div class="foot_container">
+            <div class="column">
+               <a href="index.html"><img class="f_logo" src="img/logo 2.png" alt="Логотип"></a> 
+                <a href="Пользовательское соглашение.odt" class="link">Пользовательское соглашение</a>
+                <a href="Политика конфиденциальности.odt" class="link">Политика конфиденциальности</a>
+                <p class="domen">© Линия движения, 2024</p>
+            </div>
+            <div class="column">
+                <h3>Меню</h3>
+                <a href="index.html" class="flink_menu"> Главная </a>
+                <a href="konkurs.html" class="flink_menu"> Конкурс </a>
+                <a href="results.html" class="flink_menu"> Результаты </a>
+                <a href="works.html" class="flink_menu"> Работы </a> 
+                <a href="news.html" class="flink_menu"> Новости </a> 
+                <a href="register.html" class="flink_menu f_active-link"> Личный кабинет </a>
+            </div>
+            <div class="column">
+                <h3>Контакты</h3>
+                <a class="flink_menu" href="tel:+78001111111"> 8(800)111-11-11</a>
+                <a class="flink_menu" href="mailto:liniidvizhenya@mail.ru">liniidvizhenya@mail.ru</a>
+                <div class="social_medias"><img class="social" src="img/вк.png" alt="vk"><img src="img/ок.png" alt="ok" class="social"><img src="img/тг.png" alt="tg" class="social"></div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="scripts/login_validation.js"></script>
+</body>
+</html>
